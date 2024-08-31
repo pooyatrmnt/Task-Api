@@ -21,8 +21,6 @@ class ApiEntryPoint {
 
             $route = explode('/', $uri);
 
-            array_shift($route); // to get rid of /api part of the uri
-
             $controllerName = array_shift($route);
 
             $controller = $this->website->getController($controllerName);
